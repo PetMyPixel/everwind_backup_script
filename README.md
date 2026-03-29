@@ -69,7 +69,7 @@ Because one day:
 
 * Your game crashes
 * Your save corrupts
-* Your mods explode
+* Your mods explode (when possible)
 
 And suddenly...
 
