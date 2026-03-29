@@ -43,7 +43,7 @@ echo Get-ChildItem $backupRoot -Filter *.zip ^| Sort-Object CreationTime -Descen
 :: Remove old task (if exists)
 schtasks /delete /tn "Everwind Backup" /f >nul 2>&1
 
-:: Create TRUE hourly scheduled task (FIXED)
+:: Create TRUE hourly scheduled task
 schtasks /create ^
 /tn "Everwind Backup" ^
 /sc hourly ^
