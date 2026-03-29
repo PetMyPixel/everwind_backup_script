@@ -6,7 +6,7 @@ Because losing your pixels is a **tragedy**.
 
 ## 🧠 What is this?
 
-This is a simple `.bat` script that automatically creates backups of your game files every hour.
+This is a simple `.bat` script that automatically creates backups of your game files every hour. NOTE: only when the game is running!
 
 No stress.
 No forgotten saves.
