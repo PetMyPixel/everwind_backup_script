@@ -26,8 +26,12 @@ set SCRIPT_FILE=%SCRIPT_PATH%\everwind_backup.ps1
 :: Create Scripts folder
 mkdir %SCRIPT_PATH% >nul 2>&1
 
-:: Create PowerShell script (auto user + silent + keep 3)
+:: Create PowerShell script (auto user + silent + keep 3 + ONLY when Everwind running)
 echo $ErrorActionPreference = "SilentlyContinue" > %SCRIPT_FILE%
+
+echo # Check if Everwind is running >> %SCRIPT_FILE%
+echo if (-not (Get-Process Everwind -ErrorAction SilentlyContinue)) { exit } >> %SCRIPT_FILE%
+
 echo $user = (Get-CimInstance Win32_ComputerSystem).UserName >> %SCRIPT_FILE%
 echo if (-not $user) { exit } >> %SCRIPT_FILE%
 echo $userName = $user.Split('\')[-1] >> %SCRIPT_FILE%
@@ -56,9 +60,8 @@ schtasks /create ^
 
 echo.
 echo [OK] Everwind backup installed successfully!
-echo Hourly backup enabled (true hourly, no skipping).
+echo Backups will only run while Everwind is running.
 echo Silent mode enabled.
-echo Auto user detection enabled.
 echo Keeps last 3 backups.
 echo.
 
