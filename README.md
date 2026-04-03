@@ -26,7 +26,7 @@ New Features:
 🔄 Easily remove auto-backup (cleans up the scheduled task)
 📂 Open the backup folder directly from the menu
 ♻️ Restore backups straight from the CMD interface
-🖥️ All features accessible in one simple terminal menu — no hassle, no digging around
+🖥️ All features accessible in one simple terminal menu, no hassle, no digging around!
 
 ---
 
