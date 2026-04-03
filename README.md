@@ -16,10 +16,17 @@ Just **happy, safe pixels**.
 
 ## ⚙️ Features
 
-* ⏱️ Automatic hourly backups
-* 📁 Keeps your files safe from crashes, mods, or bad decisions
-* 🪶 Lightweight (it’s literally just a batch script)
-* 🐹 Approved by Pixel Protection Services™
+⏱️ Automatic hourly backups
+📁 Keeps your files safe from crashes, mods, or bad decisions
+🪶 Lightweight (it’s literally just a batch script)
+🐹 Approved by Pixel Protection Services™
+
+New Features:
+
+🔄 Easily remove auto-backup (cleans up the scheduled task)
+📂 Open the backup folder directly from the menu
+♻️ Restore backups straight from the CMD interface
+🖥️ All features accessible in one simple terminal menu — no hassle, no digging around
 
 ---
 
@@ -36,8 +43,8 @@ That’s it. Seriously.
 ## 🛠️ How it works
 
 * The script creates a scheduled task (or runs in loop, depending on your version)
-* Every hour, it copies your files to a backup folder
-* Your pixels are now legally protected™
+* Every hour on the hour, it copies your files to a backup folder
+* Your pixels (saves) are now legally protected™
 
 ---
 
